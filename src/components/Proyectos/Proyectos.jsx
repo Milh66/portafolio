@@ -25,7 +25,7 @@ const Proyectos = () => {
        titulo: "Directorio de Alumnos - appEscuela",
        descripcion: "Aplicación en React con tarjetas de alumnos reutilizables (props), cambio de estado con useState y contador interactivo.",
        tecnologias: ["React", "Vite", "Bootstrap", "useState", "Props"],
-       linkDemo: "",
+       linkDemo: "https://appescuela-nu.vercel.app",
        linkCodigo: "https://github.com/Milh66/appEscuela"
      },
      {
@@ -35,7 +35,7 @@ const Proyectos = () => {
        titulo: "Portafolio Personal en React",
        descripcion: "Portafolio web responsivo hecho con componentes: Navbar Banner, Perfil, Habilidades, Proyectos y Contacto.",
        tecnologias: ["React", "Vite", "CSS Grid", "flexbox", "useState"],
-       linkDemo: "",
+       linkDemo: "https://portafolio-kappa-cyan.vercel.app",
        linkCodigo: "https://github.com/Milh66/portafolio"
      },
      {
