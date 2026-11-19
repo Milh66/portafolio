@@ -8,8 +8,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-background: radial-gradient(circle at center, #111a2e 0%, #0b0f19 70%);
-color: #ffffff;
+background: radial-gradient(circle at center, #ffffff 0%, #f6f6f7 70%);
+color: #18181b;
 padding: 2rem 5%;
 position: relative;
 }
@@ -27,20 +27,20 @@ ETIQUETA DE ESTADO (BADGE)
 display: flex;
 align-items: center;
 gap: 8px;
-background-color: rgba(255, 255, 255, 0.03);
-border: 1px solid rgba(255, 255, 255, 0.1);
+background-color: rgba(0, 0, 0, 0.03);
+border: 1px solid rgba(0, 0, 0, 0.1);
 padding: 0.5rem 1rem;
 border-radius: 20px;
 font-size: 0.85rem;
-color: #a0aab2;
+color: #5b5b63;
 margin-bottom: 2rem;
 }
 .status-dot {
 width: 8px;
 height: 8px;
-background-color: #00d8ff; /* Cyan */
+background-color: #c2410c; /* Naranja */
 border-radius: 50%;
-box-shadow: 0 0 8px #00d8ff; /* Efecto de brillo */
+box-shadow: 0 0 8px #c2410c; /* Efecto de brillo */
 }
 /* =========================================
 FOTO DE PERFIL CIRCULAR
@@ -53,8 +53,8 @@ width: 160px;
 height: 160px;
 object-fit: cover; /* Evita que la foto se estire si no es cuadrada */
 border-radius: 50%; /* Hace que sea un círculo perfecto */
-border: 6px solid rgba(5, 163, 215, 0.8); /* Borde sutil cyan */
-box-shadow: 0 0 20px rgba(5, 163, 215, 0.8); /* Sombra brillante */
+border: 6px solid rgba(194, 65, 12, 0.8); /* Borde naranja */
+box-shadow: 0 0 20px rgba(194, 65, 12, 0.35); /* Sombra suave naranja */
 }
 /* =========================================
 TIPOGRAFÍA (Títulos y Descripción)
@@ -66,17 +66,17 @@ line-height: 1.1;
 margin-bottom: 1.5rem;
 }
 .text-cyan {
-color: #00d8ff;
+color: #c2410c; /* Sigue llamándose text-cyan para no tocar el JSX, pero ahora es naranja */
 }
 .hero-subtitle {
 font-size: 1.1rem;
-color: #00d8ff;
+color: #c2410c;
 font-weight: 500;
 margin-bottom: 1.5rem;
 }
 .hero-description {
 font-size: 1.1rem;
-color: #8b95a1;
+color: #5b5b63;
 line-height: 1.6;
 margin-bottom: 2.5rem;
 max-width: 700px;
@@ -98,21 +98,21 @@ transition: all 0.3s ease;
 cursor: pointer;
 }
 .btn-primary {
-background-color: #00d8ff;
-color: #0b0f19;
-border: 2px solid #00d8ff;
+background-color: #c2410c;
+color: #ffffff;
+border: 2px solid #c2410c;
 }
 .btn-primary:hover {
 background-color: transparent;
-color: #00d8ff;
+color: #c2410c;
 }
 .btn-secondary {
 background-color: transparent;
-color: #ffffff;
-border: 1px solid rgba(255, 255, 255, 0.15);
+color: #18181b;
+border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .btn-secondary:hover {
-background-color: rgba(255, 255, 255, 0.05);
+background-color: rgba(0, 0, 0, 0.05);
 }
 /* =========================================
 ANIMACIÓN DE LA FLECHA (Opcional)
@@ -120,7 +120,7 @@ ANIMACIÓN DE LA FLECHA (Opcional)
 .scroll-indicator {
 position: absolute;
 bottom: 2rem;
-color: #8b95a1;
+color: #5b5b63;
 font-size: 1.5rem;
 animation: bounce 2s infinite;
 }

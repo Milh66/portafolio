@@ -1,5 +1,5 @@
 import './Banner.css';
-import miFoto from '../../assets/miFoto.png';
+import miFoto from '../../assets/miFoto.jpeg';
 
 const Banner = () => {
   return (

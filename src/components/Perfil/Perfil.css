@@ -3,8 +3,8 @@ CONTENEDOR PRINCIPAL
 ========================================= */
 .sobre-mi-section {
 padding: 5rem 5%;
-background-color: #0b0f19; /* Continuidad del fondo oscuro */
-color: #ffffff;
+background-color: #f6f6f7; /* Continuidad del fondo claro */
+color: #18181b;
 display: flex;
 justify-content: center;
 }
@@ -16,7 +16,7 @@ width: 100%;
 font-size: 2.5rem;
 font-weight: 700;
 margin-bottom: 2.5rem;
-color: #ffffff;
+color: #18181b;
 }
 /* =========================================
 GRID (Grilla para las 2 tarjetas)
@@ -32,12 +32,11 @@ gap: 2rem;
 TARJETAS (Cards)
 ========================================= */
 .card {
-background-color: #111a2e; /* Un tono ligeramente más claro que el
-fondo */
-border: 1px solid rgba(255, 255, 255, 0.05);
+background-color: #ffffff; /* Blanco sobre el fondo gris claro */
+border: 1px solid #e3e3e6;
 border-radius: 12px;
 padding: 2.5rem;
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 .card-header {
 display: flex;
@@ -46,8 +45,8 @@ gap: 1rem;
 margin-bottom: 1.5rem;
 }
 .icon-box {
-background-color: rgba(110, 231, 183, 0.1);
-color: #6ee7b7; /* Color menta/cian */
+background-color: rgba(194, 65, 12, 0.1);
+color: #c2410c; /* Naranja */
 padding: 0.8rem;
 border-radius: 8px;
 display: flex;
@@ -57,10 +56,10 @@ justify-content: center;
 .card-header h3 {
 font-size: 1.4rem;
 font-weight: 600;
-color: #ffffff;
+color: #18181b;
 }
 .card-text {
-color: #8b95a1;
+color: #5b5b63;
 line-height: 1.8;
 font-size: 1rem;
 text-align: justify;
@@ -76,7 +75,7 @@ gap: 2rem;
 .timeline-item {
 position: relative;
 padding-left: 1.5rem;
-border-left: 2px solid rgba(255, 255, 255, 0.1);
+border-left: 2px solid rgba(0, 0, 0, 0.1);
 }
 /* El punto en la línea de tiempo */
 .timeline-item::before {
@@ -86,8 +85,8 @@ left: -5px; /* Centra el punto sobre el borde izquierdo */
 top: 5px;
 width: 8px;
 height: 8px;
-background-color: #111a2e;
-border: 2px solid #6ee7b7;
+background-color: #ffffff;
+border: 2px solid #15803d;
 border-radius: 50%;
 }
 .timeline-header {
@@ -100,12 +99,12 @@ gap: 0.5rem;
 }
 .timeline-header h4 {
 font-size: 1.1rem;
-color: #6ee7b7;
+color: #15803d;
 font-weight: 600;
 }
 .timeline-date {
 font-size: 0.9rem;
-color: #8b95a1;
+color: #5b5b63;
 }
 /* =========================================
 ETIQUETAS (Badges)
@@ -118,13 +117,13 @@ border-radius: 4px;
 letter-spacing: 0.5px;
 }
 .badge-outline {
-border: 1px solid #6ee7b7;
-color: #6ee7b7;
+border: 1px solid #15803d;
+color: #15803d;
 background-color: transparent;
 }
 .badge-solid {
-background-color: #6ee7b7;
-color: #0b0f19;
+background-color: #15803d;
+color: #ffffff;
 }
 /* =========================================
 RESPONSIVIDAD (Celulares y Tablets)

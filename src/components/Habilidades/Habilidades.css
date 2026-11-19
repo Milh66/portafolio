@@ -3,7 +3,7 @@ CONTENEDOR PRINCIPAL
 ========================================= */
 .habilidades-section {
 padding: 5rem 5%;
-background-color: #0b0f19;
+background-color: #f6f6f7;
 display: flex;
 justify-content: center;
 }
@@ -25,8 +25,8 @@ gap: 1.5rem;
 TARJETA (Card)
 ========================================= */
 .skill-card {
-background-color: #111a2e;
-border: 1px solid rgba(255, 255, 255, 0.05);
+background-color: #ffffff;
+border: 1px solid #e3e3e6;
 border-radius: 12px;
 padding: 2rem;
 transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -37,8 +37,8 @@ justify-content: space-between;
 /* Efecto al pasar el mouse */
 .skill-card:hover {
 transform: translateY(-5px);
-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-border-color: rgba(110, 231, 183, 0.2);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+border-color: rgba(194, 65, 12, 0.35);
 }
 /* =========================================
 CABECERA (Ícono y Botón)
@@ -57,7 +57,7 @@ align-items: center;
 justify-content: flex-start;
 }
 .text-cyan {
-color: #00d8ff;
+color: #c2410c; /* Sigue llamándose text-cyan para no tocar el JSX, pero ahora es naranja */
 }
 /* =========================================
 BOTONES / ETIQUETAS SUPERIORES
@@ -75,31 +75,31 @@ transition: background-color 0.3s ease;
 }
 /* Variante Verde (Certificado) */
 .badge-green {
-color: #6ee7b7;
-border-color: rgba(110, 231, 183, 0.4);
+color: #15803d;
+border-color: rgba(21, 128, 61, 0.4);
 }
 .badge-green:hover {
-background-color: rgba(110, 231, 183, 0.1);
+background-color: rgba(21, 128, 61, 0.1);
 }
 /* Variante Amarilla (En Proceso) */
 .badge-yellow {
-color: #fbbf24;
-border-color: rgba(251, 191, 36, 0.4);
+color: #b45309;
+border-color: rgba(180, 83, 9, 0.4);
 }
 .badge-yellow:hover {
-background-color: rgba(251, 191, 36, 0.1);
+background-color: rgba(180, 83, 9, 0.1);
 }
 /* =========================================
 CUERPO DE LA TARJETA (Textos)
 ========================================= */
 .skill-title {
-color: #ffffff;
+color: #18181b;
 font-size: 1.25rem;
 font-weight: 700;
 margin-bottom: 0.8rem;
 }
 .skill-desc {
-color: #8b95a1;
+color: #5b5b63;
 font-size: 0.95rem;
 line-height: 1.6;
 margin-bottom: 1.5rem;
@@ -107,7 +107,7 @@ min-height: 50px; /* Mantiene la altura pareja aunque el texto sea
 corto */
 }
 .skill-level {
-color: #6ee7b7;
+color: #15803d;
 font-size: 0.9rem;
 font-weight: 600;
 }

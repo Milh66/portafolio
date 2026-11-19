@@ -1,85 +1,111 @@
 /* =========================================
-ESTILOS GENERALES DEL NAVBAR
-========================================= */
+   ESTILOS GENERALES DEL NAVBAR
+   ========================================= */
 .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1.5rem 5%;
-background-color: #0b0f19; /* Fondo oscuro elegante */
-color: #ffffff;
-position: sticky;
-top: 0;
-z-index: 1000;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background-color: #f8f9fa;
+  color: #18181b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e4e4e7;
 }
+
 /* =========================================
-ESTILOS DEL LOGO
-========================================= */
+   ESTILOS DEL LOGO Y TEXTOS DE ACENTO
+   ========================================= */
 .navbar-logo {
-font-size: 1.8rem;
-font-weight: 700;
-cursor: pointer;
-letter-spacing: 1px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #18181b;
 }
-.text-cyan {
-color: #00d8ff; /* Color de acento (Cyan) */
+
+/* Cambia el celeste por el naranja terracota en toda la página */
+.text-cyan,
+.navbar-logo span,
+.hero-title span,
+h1 span {
+  color: #c2410c !important;
 }
+
+/* Pone "Mileydi Haro" del centro en una sola línea */
+h1, .hero-title {
+  color: #18181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
 /* =========================================
-ESTILOS DE LOS ENLACES (DESKTOP)
-========================================= */
+   ESTILOS DE LOS ENLACES (DESKTOP)
+   ========================================= */
 .navbar-links {
-display: flex;
-gap: 2.5rem;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
 }
+
 .navbar-links a {
-color: #a0aab2;
-text-decoration: none;
-font-size: 1rem;
-font-weight: 500;
-transition: color 0.3s ease;
+  color: #71717a;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
 }
+
 .navbar-links a:hover {
-color: #ffffff;
+  color: #c2410c;
 }
+
 /* =========================================
-BOTÓN HAMBURGUESA (Oculto en PC)
-========================================= */
+   BOTÓN HAMBURGUESA (Oculto en PC)
+   ========================================= */
 .navbar-toggle {
-display: none;
-flex-direction: column;
-cursor: pointer;
-gap: 6px;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
 }
+
 .bar {
-width: 25px;
-height: 3px;
-background-color: #ffffff;
-border-radius: 2px;
-transition: all 0.3s ease;
+  width: 24px;
+  height: 2.5px;
+  background-color: #18181b;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
+
 /* =========================================
-MEDIA QUERY: VERSIÓN MÓVIL Y TABLET
-========================================= */
+   MEDIA QUERY: VERSIÓN MÓVIL Y TABLET
+   ========================================= */
 @media (max-width: 768px) {
-.navbar-toggle {
-display: flex; /* Mostramos el botón hamburguesa */
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    text-align: center;
+    gap: 1.5rem;
+    border-bottom: 1px solid #e4e4e7;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
 }
-.navbar-links {
-display: none; /* Ocultamos los enlaces horizontales */
-flex-direction: column;
-position: absolute;
-top: 100%;
-left: 0;
-width: 100%;
-background-color: #0b0f19;
-padding: 2rem 0;
-text-align: center;
-gap: 2rem;
-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-}
-/* Cuando el estado isOpen es true, se añade la clase "open" */
-.navbar-links.open {
-display: flex;
-}
-}
+
